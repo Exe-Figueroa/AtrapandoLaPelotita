@@ -54,21 +54,24 @@ header h1{
     height: 70px;
     background-position: center;
     background-size: cover;
-    transition:all 0.2s ease;
     display: flex;
-    justify-content: end;
 }
 .pelotita-container {
     position: absolute;
+    width: 70px;
+    height: 70px;
+    transition: all 0.1s ease;
+
 }
 .cartelito {
     position: absolute;
     top: calc(0% - 8px);
-    right: calc(0% - 50px);
+    right: calc(0% - 100px);
     background-color: rgb(184, 181, 181);
     padding: 5px;
     border-radius: 5px;
     z-index: 1;
+    font-size: medium;
 }
 
 .move-ball-container .move-ball .positionInitial{
