@@ -47,7 +47,7 @@ header h1{
     margin-top: 30px;
 }
 .move-ball-container .move-ball .pelotita {
-    position: absolute;
+    position: relative;
     background-image: url('https://i.pinimg.com/originals/a7/62/e1/a762e1e3ba2f96dc23166274ed0cea82.png');
     background-repeat: no-repeat;
     width: 70px;
@@ -55,7 +55,22 @@ header h1{
     background-position: center;
     background-size: cover;
     transition:all 0.2s ease;
+    display: flex;
+    justify-content: end;
 }
+.pelotita-container {
+    position: absolute;
+}
+.cartelito {
+    position: absolute;
+    top: calc(0% - 8px);
+    right: calc(0% - 50px);
+    background-color: rgb(184, 181, 181);
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
 .move-ball-container .move-ball .positionInitial{
     top: calc(50% - 35px);
     left: calc(50% - 35px);

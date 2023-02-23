@@ -1,5 +1,5 @@
 
-const pelotita = document.querySelector('.pelotita')
+const pelotita = document.querySelector('.pelotita-container')
 const miDiv = document.querySelector(".move-ball");
 let indicador=0
 pelotita.addEventListener('mouseenter', moverla)
@@ -15,4 +15,3 @@ function moverla() {
    pelotita.style.left = (Math.random() * (width - 70) ) + "px";
    pelotita.style.top = (Math.random() * (height - 70) ) + "px";
 }
-
