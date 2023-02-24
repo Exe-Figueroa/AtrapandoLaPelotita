@@ -2,9 +2,13 @@
 const pelotita = document.querySelector('.pelotita-container')
 const miDiv = document.querySelector(".move-ball");
 let indicador=0
+
 pelotita.addEventListener('mouseenter', moverla)
+
 let width = miDiv.getBoundingClientRect().width;
 let height = miDiv.getBoundingClientRect().height;
+
+const cartelito = document.querySelector('.cartelito')
 
 function moverla() {
 
@@ -13,13 +17,13 @@ function moverla() {
 
     pelotita.style.left = (Math.random() * (width - 70) ) + "px";
     pelotita.style.top = (Math.random() * (height - 70) ) + "px";
-    indicador++
+   
     switch(indicador){
         case 0:
-            alert('osoooo')
+            console.log(0)
         break;
         case 1: 
-        alert('casii')
+            cartelito.innerHTML = 'casii'
         break
         case 2:
         console.log(indicador)
@@ -43,5 +47,5 @@ function moverla() {
         indicador=0
 
     }
-    
+    indicador++
 }
