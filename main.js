@@ -4,12 +4,14 @@ const miDiv = document.querySelector(".move-ball");
 let indicador=0
 const containGame = document.querySelector ('.move-ball-container')
 const btnStart = document.querySelector ('.play-game-button')
+
+
 btnStart.addEventListener('click', playGame)
 pelotitac.addEventListener('mouseenter', moverla)
     
     let width = miDiv.getBoundingClientRect().width;
     let height = miDiv.getBoundingClientRect().height;
-    
+
 function obtenerTamañoContenedor (){
     width = miDiv.getBoundingClientRect().width;
     height = miDiv.getBoundingClientRect().height;
@@ -20,6 +22,7 @@ const cartelito = document.querySelector('.cartelito')
 
 function playGame(){
     containGame.classList.remove('inactive');
+    btnStart.classList.add('inactive');
     obtenerTamañoContenedor();
 };
 function moverla() {

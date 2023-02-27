@@ -40,7 +40,19 @@ header h1{
     justify-content: center;
     align-items: center;
     width: 100%;
+    /* animation-name: fadeIn;
+    animation-duration: 1s; */
 }
+/* @keyframes fadeIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+} */
 .move-ball-container .move-ball {
     width: 80%;
     height: 400px;
