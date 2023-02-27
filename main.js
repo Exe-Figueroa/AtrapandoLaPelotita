@@ -6,20 +6,23 @@ const containGame = document.querySelector ('.move-ball-container')
 const btnStart = document.querySelector ('.play-game-button')
 btnStart.addEventListener('click', playGame)
 pelotitac.addEventListener('mouseenter', moverla)
+    
+    let width = miDiv.getBoundingClientRect().width;
+    let height = miDiv.getBoundingClientRect().height;
+    
+function obtenerTamañoContenedor (){
+    width = miDiv.getBoundingClientRect().width;
+    height = miDiv.getBoundingClientRect().height;
+};
 
-let width = miDiv.getBoundingClientRect().width;
-let height = miDiv.getBoundingClientRect().height;
 
 const cartelito = document.querySelector('.cartelito')
 
 function playGame(){
     containGame.classList.remove('inactive');
+    obtenerTamañoContenedor();
 };
 function moverla() {
-
-    
-    
-
     pelotitac.style.left = (Math.random() * (width - 70) ) + "px";
     pelotitac.style.top = (Math.random() * (height - 70) ) + "px";
     switch(indicador){
