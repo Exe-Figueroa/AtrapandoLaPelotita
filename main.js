@@ -12,10 +12,13 @@ let height = miDiv.getBoundingClientRect().height;
 
 const cartelito = document.querySelector('.cartelito')
 
+function playGame(){
+    containGame.classList.remove('inactive');
+};
 function moverla() {
 
     
-    let min = 50
+    
 
     pelotitac.style.left = (Math.random() * (width - 70) ) + "px";
     pelotitac.style.top = (Math.random() * (height - 70) ) + "px";
