@@ -8,9 +8,10 @@ const btnStart = document.querySelector ('.play-game-button')
 
 btnStart.addEventListener('click', playGame)
 pelotitac.addEventListener('mouseenter', moverla)
+pelotitac.addEventListener('click', ganaste)
     
-    let width = miDiv.getBoundingClientRect().width;
-    let height = miDiv.getBoundingClientRect().height;
+let width = miDiv.getBoundingClientRect().width;
+let height = miDiv.getBoundingClientRect().height;
 
 function obtenerTamañoContenedor (){
     width = miDiv.getBoundingClientRect().width;
@@ -63,4 +64,8 @@ function moverla() {
     }
     indicador++
 
+}
+
+function ganaste(){
+    alert('ganaste')
 }
