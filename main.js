@@ -10,8 +10,8 @@ btnStart.addEventListener('click', playGame)
 
 pelotitac.addEventListener('click', ganaste)
     
-let width = miDiv.getBoundingClientRect().width;
-let height = miDiv.getBoundingClientRect().height;
+let width 
+let height 
 
 function obtenerTamañoContenedor (){
     width = miDiv.getBoundingClientRect().width;
@@ -25,7 +25,7 @@ function playGame(){
     containGame.classList.remove('inactive');
     btnStart.classList.add('inactive');
     obtenerTamañoContenedor();
-    setInterval(moverla, 230)
+    setInterval(moverla, 300)
 };
 
 function moverla() {
