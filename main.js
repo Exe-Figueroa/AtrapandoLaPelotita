@@ -20,12 +20,16 @@ function obtenerTamañoContenedor (){
 
 
 const cartelito = document.querySelector('.cartelito')
-
+function controlAnimation(){
+    obtenerTamañoContenedor();
+    setInterval(moverla, 300)
+}
 function playGame(){
     containGame.classList.remove('inactive');
     btnStart.classList.add('inactive');
-    obtenerTamañoContenedor();
-    setInterval(moverla, 300)
+    setTimeout(() => {
+        controlAnimation();
+    }, 200); 
 };
 
 function moverla() {
